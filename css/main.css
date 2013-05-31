@@ -83,6 +83,11 @@ footer {
     float:left;
 }
 
+.social-item#fb-share {
+    /* to avoid elements jumping around before fully loaded */
+    width:75px;
+}
+
 .social-item#twitter-share {
     margin-left:30px;
 }
