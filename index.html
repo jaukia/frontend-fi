@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>Frontend.fi — spreading front-end <3 in Finland</title>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        
+        <meta property="og:title" content="Frontend.fi"/>
+        <meta property="og:description" content="Community for Front-end developers in Finland." />
+        <meta property="og:type" content="website" />
+    
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="site-content">
+            <div class="container">
+    
+                <h1>Frontend.fi</h1>
+    
+                <p>Frontend.fi is a community for Front-end developers in Finland.</p>
+                
+                <p>Front-end developers need to master a number of things to be at the top of their game, such as: HTML5, usability, mobile support, cross-browser testing, WebGL, Javascript, CSS frameworks, A/B Testing, analytics and fonts on the web.</p>
+                
+                <p>Frontend.fi organizes events for spreading this knowledge.</p>
+    
+                <hr>
+    
+                <p>Follow us to keep track of upcoming activity:</p>
+    
+                <div class="social-buttons">
+                    
+                    <div class="social-item">
+                        <div class="fb-like" data-href="http://www.facebook.com/frontend.fi" data-send="false" data-layout="box_count" data-width="450" data-show-faces="true" data-font="segoe ui"></div>
+                    </div>
+                    
+                    <div class="social-item" id="twitter-share">
+                        <a href="https://twitter.com/frontendfinland" class="twitter-follow-button" data-show-count="false" data-size="large"></a>
+                    </div>
+
+                </div>
+    
+            </div>
+        </div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/fi_FI/all.js#xfbml=1&appId=193774153979001";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        
+          ga('create', 'UA-41349375-1', 'frontend.fi');
+          ga('send', 'pageview');
+        
+        </script>
+        
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+
+        <script>
+        WebFont.load({
+            google: {
+                families: ['Open Sans:300,600'] // font-family name
+            },
+            active: function() {
+                // tune this if there is fouc
+                //$('h1').fadeTo(0,1.0);
+            }
+        });
+        </script>
+    </body>
+</html>
