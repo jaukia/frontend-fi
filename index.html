@@ -16,11 +16,11 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        
+
         <meta property="og:title" content="Frontend.fi"/>
         <meta property="og:description" content="Community for front-end developers in Finland." />
         <meta property="og:type" content="website" />
-    
+
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
@@ -30,31 +30,39 @@
 
         <div class="site-content">
             <div class="container">
-    
+
                 <h1>Frontend.fi</h1>
-    
+
                 <p>Frontend.fi is a community for front-end developers in Finland.</p>
-                
+
                 <p>Front-end developers need to master a number of things to be at the top of their game, such as: HTML5, usability, mobile support, cross-browser testing, WebGL, Javascript, CSS frameworks, A/B Testing, analytics and fonts on the web.</p>
-                
+
                 <p>Frontend.fi organizes events for spreading this knowledge.</p>
-    
+
                 <hr>
-    
+
+                <h3>Follow us</h3>
+
                 <p>Follow us to keep track of upcoming activity:</p>
-    
+
                 <div class="social-buttons">
-                    
+
                     <div class="social-item" id="fb-share">
                         <div class="fb-like" data-href="http://www.facebook.com/frontend.fi" data-send="false" data-layout="box_count" data-width="450" data-show-faces="true" data-font="segoe ui"></div>
                     </div>
-                    
+
                     <div class="social-item" id="twitter-share">
                         <a href="https://twitter.com/frontendfinland" class="twitter-follow-button" data-show-count="true" data-size="large"></a>
                     </div>
 
                 </div>
-    
+
+                <hr>
+
+                <h3>Upcoming events</h3>
+
+                <div id="eventListing"></div>
+
             </div>
         </div>
 
@@ -62,6 +70,18 @@
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+
+        <script type='text/javascript' src="http://evbdn.eventbrite.com/s3-s3/static/js/platform/Eventbrite.jquery.js"></script>
+
+        <script type='text/javascript'>
+        $(document).ready(function(){
+            Eventbrite({'app_key': "Q55OAOOS5C3LYS2EKH"}, function(eb){
+                eb.organizer_list_events( {'id': 3550403061, 'statuses': "live,started,completed"}, function( response ){
+                    $("#eventListing").append(eb.utils.eventList( response, eb.utils.eventListRow ));
+                });
+            });
+        });
+        </script>
 
         <div id="fb-root"></div>
         <script>(function(d, s, id) {
@@ -77,12 +97,12 @@
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
           })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        
+
           ga('create', 'UA-41349375-1', 'frontend.fi');
           ga('send', 'pageview');
-        
+
         </script>
-        
+
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
         <script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>

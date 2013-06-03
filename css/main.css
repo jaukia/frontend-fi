@@ -2,10 +2,11 @@
  * NODECOPTER site styles
  */
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,600);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600);
 
 body {
     font-family: 'Open Sans';
+    margin-bottom:14%;
 }
 
 h1 {
@@ -19,13 +20,13 @@ h1 {
 
 h2 {
     font-size: 36px;
-    font-weight:300;
+    font-weight:400;
     text-indent:-2px;
 }
 
 h3 {
     font-size: 18px;
-    font-weight:600;
+    font-weight:400;
     text-transform:uppercase;
 }
 
@@ -94,6 +95,11 @@ footer {
 
 hr {
     margin: 2em 0 !important;
+    clear:both;
+}
+
+.eb_event_list_item span {
+    padding-right:5%
 }
 
 /*
