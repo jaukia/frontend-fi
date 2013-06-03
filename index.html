@@ -45,7 +45,7 @@
 
                 <p>Follow us to keep track of upcoming activity:</p>
 
-                <div class="social-buttons">
+                <div class="social-buttons clearfix">
 
                     <div class="social-item" id="fb-share">
                         <div class="fb-like" data-href="http://www.facebook.com/frontend.fi" data-send="false" data-layout="box_count" data-width="450" data-show-faces="true" data-font="segoe ui"></div>
@@ -75,8 +75,8 @@
 
         <script type='text/javascript'>
         $(document).ready(function(){
-            Eventbrite({'app_key': "Q55OAOOS5C3LYS2EKH"}, function(eb){
-                eb.organizer_list_events( {'id': 3550403061, 'statuses': "live,started,completed"}, function( response ){
+            Eventbrite({'app_key': "IDIMAMWSQB2O2F7AZ4"}, function(eb){
+                eb.organizer_list_events( {'id': 4102879513, 'statuses': "live,started"}, function( response ){
                     $("#eventListing").append(eb.utils.eventList( response, eb.utils.eventListRow ));
                 });
             });
