@@ -57,12 +57,14 @@
 
                 </div>
 
-                <hr>
-
-                <h3>Upcoming events</h3>
-
-                <div id="eventListing"></div>
-
+                <div id="eventPanel" style="display:none">
+                    <hr>
+    
+                    <h3>Upcoming events</h3>
+    
+                    <div id="eventListing"></div>
+                </div>
+                
             </div>
         </div>
 
@@ -77,7 +79,11 @@
         $(document).ready(function(){
             Eventbrite({'app_key': "IDIMAMWSQB2O2F7AZ4"}, function(eb){
                 eb.organizer_list_events( {'id': 4102879513, 'statuses': "live,started"}, function( response ){
-                    $("#eventListing").append(eb.utils.eventList( response, eb.utils.eventListRow ));
+                    var eventList = eb.utils.eventList( response, eb.utils.eventListRow );
+                    $("#eventListing").append(eventList);
+                    if($(eventList).find("span").length!==0) {
+                        $("#eventPanel").show();
+                    }
                 });
             });
         });
