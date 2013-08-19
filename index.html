@@ -85,9 +85,14 @@
             var not_iso_8601 = /\d\d-\d\d-\d\d \d\d:\d\d:\d\d/;
             var date_string = not_iso_8601.test( evnt.start_date ) ? evnt.start_date.replace(' ', 'T') : evnt.start_date;
             var timezone_string = evnt.timezone_offset;
-            var start_date = moment( date_string + " " + timezone_string ).toDate();
+            
+            var momentDate = moment( date_string + " " + timezone_string );
+            var start_date = momentDate.toDate();
             var venue_name = 'Online'; //default location name
-            var time_string = Eventbrite.prototype.utils.formatTime( start_date );
+            
+            // output in Helsinki time
+            var time_string = momentDate.zone('+0300').format("H:mm");
+            
             var html = '';
             date_string = start_date.toDateString();
             if( evnt.venue !== undefined && evnt.venue.name !== undefined && evnt.venue.name !== ''){ 
