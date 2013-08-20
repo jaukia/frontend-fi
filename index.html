@@ -86,6 +86,11 @@
             var date_string = not_iso_8601.test( evnt.start_date ) ? evnt.start_date.replace(' ', 'T') : evnt.start_date;
             var timezone_string = evnt.timezone_offset;
             
+            if(evnt.title == "") {
+                // this is some eventbrite weird dummy event and can be ignored
+                return;
+            }
+            
             var momentDate = moment( date_string + " " + timezone_string );
             var start_date = momentDate.toDate();
             var venue_name = 'Online'; //default location name
