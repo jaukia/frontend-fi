@@ -7,7 +7,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-        <title>Frontend.fi — spreading front-end <3 in Finland</title>
+        <title>Frontend.fi — spreading front-end &lt;3 in Finland</title>
 
         <meta name="description" content="Community for front-end developers in Finland.">
         <meta name="viewport" content="width=device-width">
@@ -63,7 +63,7 @@
                 <div id="eventPanel" style="display:none">
                     <hr>
     
-                    <h3>Upcoming events</h3>
+                    <h3>Events</h3>
     
                     <div id="eventListing"></div>
                 </div>
@@ -113,7 +113,7 @@
         
         $(document).ready(function(){
             Eventbrite({'app_key': "IDIMAMWSQB2O2F7AZ4"}, function(eb){
-                eb.organizer_list_events( {'id': 4547329033, 'statuses': "live,started"}, function( response ){
+                eb.organizer_list_events( {'id': 4547329033, 'statuses': 'live,started', 'asc_or_desc': 'desc'}, function( response ){
                     
                     var eventList = eb.utils.eventList( response, ffEventListRow );
                     $("#eventListing").append(eventList);

@@ -11,7 +11,6 @@ body {
 
 img#logo {
     margin-top:8%;
-    margin-bottom:-4%;
     margin-left:auto;
     margin-right:auto;
     display:block;
@@ -23,7 +22,6 @@ h1 {
     margin-left:auto;
     margin-right:auto;
     text-transform:uppercase;
-    margin-top:8%;
     text-align:center;
 }
 
@@ -105,9 +103,32 @@ hr {
     clear:both;
 }
 
+.eb_event_list_item {
+    clear: both;
+    line-height: 1.75em;
+}
+
 .eb_event_list_item span {
+    display: block;
+    float: left;
     padding-right:5%
 }
+
+.eb_event_list_title {
+    width: 12em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.eb_event_list_date {
+    width: 9em;
+}
+
+.eb_event_list_time {
+    width: 4em;
+}
+
 
 /*
  * HTML5 Boilerplate
