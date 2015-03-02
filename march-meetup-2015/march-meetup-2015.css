@@ -82,7 +82,9 @@ main .signup:active {
 }
 
 .speaker {
-    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
 }
 
 .speaker-img-placeholder {
@@ -139,7 +141,11 @@ main .signup:active {
         padding-right: 20px;
         padding-bottom:0;
     }
-
+    .speaker {
+        padding-top: 0;
+        
+        border-bottom: none;
+    }   
     .speaker-img {
         float:left;
         margin-right: 2%;
