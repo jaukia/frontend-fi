@@ -73,6 +73,7 @@ main .signup:active {
     font-size: 50%;
     display: block;
     margin-top: -15px;
+    line-height: 1.6;
 }
 
 
@@ -143,7 +144,7 @@ main .signup:active {
     }
     .speaker {
         padding-top: 0;
-        
+
         border-bottom: none;
     }   
     .speaker-img {
