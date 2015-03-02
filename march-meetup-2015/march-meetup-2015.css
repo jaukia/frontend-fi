@@ -82,13 +82,23 @@ main .signup:active {
 }
 
 .speaker {
-
+    
 }
 
 .speaker-img {
     float:left;
     margin-right: 2%;
     width: 18%;
+}
+
+.speaker-img-placeholder {
+    float: left;
+    margin-right: 2%;
+    width: 18%;
+    background-color: #ccc;
+    text-align: center;
+    padding-top: 8.5%;
+    padding-bottom: 8.5%;
 }
 
 .speaker-img-alt {
