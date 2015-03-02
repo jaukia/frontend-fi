@@ -85,36 +85,12 @@ main .signup:active {
     
 }
 
-.speaker-img {
-    float:left;
-    margin-right: 2%;
-    width: 18%;
-}
-
 .speaker-img-placeholder {
-    float: left;
-    margin-right: 2%;
-    width: 18%;
-    background-color: #ccc;
-    text-align: center;
-    padding-top: 8.5%;
-    padding-bottom: 8.5%;
-}
-
-.speaker-img-alt {
-    float: right;
-    margin-left: 2%;
-    width: 18%;
-}
-
-.speaker-body {
-    float:left;
-    width: 80%;
-}
-
-.speaker-body-alt {
-    float: left;
-    width: 80%;
+   width: 50%;
+   background-color: #ccc;
+   text-align: center;
+   padding-top: 25%;
+   padding-bottom: 25%;
 }
 
 .sponsor-list {
@@ -122,9 +98,9 @@ main .signup:active {
 }
 
 .sponsor {
-    display: inline-block;
+    display: block;
     list-style: none;
-    padding-right: 20px;
+    padding-bottom: 20px;
 }
 
 .logo {
@@ -156,9 +132,43 @@ main .signup:active {
     padding-bottom:10px; 
 }
 
-.logo--vincit {
-    width: 118px;
-    background-image: url('/img/logo-vincit.png');
-    background-size: 89px 38px;     
-    border: 1px solid red;   
+@media only screen and (min-width: 37.5em) {
+    
+    .sponsor {
+        display: inline-block;
+        padding-right: 20px;
+        padding-bottom:0;
+    }
+
+    .speaker-img {
+        float:left;
+        margin-right: 2%;
+        width: 18%;
+    }
+
+    .speaker-img-placeholder {
+        float: left;
+        margin-right: 2%;
+        width: 18%;
+        background-color: #ccc;
+        text-align: center;
+        padding-top: 8.5%;
+        padding-bottom: 8.5%;
+    }
+
+    .speaker-img-alt {
+        float: right;
+        margin-left: 2%;
+        width: 18%;
+    }
+
+    .speaker-body {
+        float:left;
+        width: 80%;
+    }
+
+    .speaker-body-alt {
+        float: left;
+        width: 80%;
+    }
 }
