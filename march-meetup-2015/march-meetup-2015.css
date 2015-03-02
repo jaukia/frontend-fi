@@ -68,3 +68,9 @@ main .signup:hover {
 main .signup:active {
     background-color: #40A040;
 }
+
+.disclaimer {
+    font-size: 50%;
+    display: block;
+    margin-top: -15px;
+}
