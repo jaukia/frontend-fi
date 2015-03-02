@@ -81,6 +81,7 @@ main .signup:active {
 .sponsor {
     display: inline-block;
     list-style: none;
+    padding-right: 20px;
 }
 
 .logo {
@@ -105,10 +106,9 @@ main .signup:active {
 }
 
 .logo--reaktor {
-    width: 118px;
-    background-image: url('/img/logo-reaktor.png');
-    background-size: 89px 38px;
-    border: 1px solid red;   
+    width: 219px;
+    background-image: url('/img/logo-reaktor-414x72.png');
+    background-size: 219px 38px;  
 }
 
 .logo--vincit {
