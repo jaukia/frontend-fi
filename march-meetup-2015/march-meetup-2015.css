@@ -74,3 +74,46 @@ main .signup:active {
     display: block;
     margin-top: -15px;
 }
+
+.sponsor-list {
+    padding-left:0;
+}
+.sponsor {
+    display: inline-block;
+    list-style: none;
+}
+
+.logo {
+    display: block;
+    text-indent: -999em;
+    height: 38px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.logo--futurice {
+   width: 118px;
+   background-image: url('/img/logo--futurice.png');
+   border: 1px solid red;   
+}
+
+.logo--sc5 {
+    width: 118px;
+    background-image: url('/img/logo-sc5-100x235.png');
+    background-size: 89px 38px;     
+}
+
+.logo--reaktor {
+    width: 118px;
+    background-image: url('/img/logo-reaktor.png');
+    background-size: 89px 38px;
+    border: 1px solid red;   
+}
+
+.logo--vincit {
+    width: 118px;
+    background-image: url('/img/logo-vincit.png');
+    background-size: 89px 38px;     
+    border: 1px solid red;   
+}
