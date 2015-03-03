@@ -88,6 +88,16 @@ main .signup:active {
     border-bottom: 1px solid #ccc;
 }
 
+
+.speaker-title {
+    margin-bottom: 0;
+}
+
+.speaker-topic {
+    font-size: 95%;
+    color: #999;
+}
+
 .speaker-img-placeholder {
    width: 50%;
    background-color: #ccc;
