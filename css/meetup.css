@@ -145,6 +145,14 @@ main .signup:active {
     padding-bottom:10px; 
 }
 
+.logo--frantic {
+    width: 157px;
+    height: 31px;
+    background-image: url('/img/logo-frantic.svg');
+    background-size: 157px 31px;
+    background-position: 0 0;
+}
+
 @media only screen and (min-width: 37.5em) {
     
     .sponsor {
