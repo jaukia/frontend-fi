@@ -123,6 +123,8 @@ main .signup:active {
     display: block;
     background-repeat: no-repeat;
     background-position: 0 0;
+    margin-top:0;
+    margin-bottom:0;
 }
 
 .logo--futurice {
@@ -154,10 +156,10 @@ main .signup:active {
 }
 
 .logo--solita {
-    width: 157px;
+    width: 148px;
     height: 31px;
-    background-image: url('/img/logo-frantic.svg');
-    background-size: 157px 31px;
+    background-image: url('/img/logo_solita_dark.svg');
+    background-size: 148px 31px;
     background-position: 0 0;
 }
 
