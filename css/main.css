@@ -16,6 +16,19 @@ img#logo {
     display:block;
 }
 
+.youtube-logo {
+    background-image: url('../img/youtube-logo.png');
+    background-size: 145px 91px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    text-indent: -999em;
+    width: 145px;
+    height: 91px;
+    display: inline-block;
+
+}
+
+
 h1 {
     font-size: 40px;
     font-weight:300;
