@@ -54,7 +54,7 @@ main .signup {
     margin: 20px 0px;
     cursor: pointer;
     background-color: #48B048;
-    color: #FFFFFF;
+    color: #fff;
     padding: 10px 20px;
     text-transform: uppercase;
     border: 1px solid #309030;
@@ -67,6 +67,26 @@ main .signup:hover {
 
 main .signup:active {
     background-color: #40A040;
+}
+
+main .coming {
+    display: inline-block;
+    margin: 20px 0px;
+    cursor: pointer;
+    background-color: #ccc;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid #309030;
+}
+
+main .coming:hover {
+    text-decoration: none;
+    background-color: #999;
+}
+
+main .coming:active {
+    background-color: #666;
 }
 
 .disclaimer {
