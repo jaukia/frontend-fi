@@ -167,6 +167,13 @@ main .coming:active {
     padding-bottom:10px; 
 }
 
+.logo--palmu {
+    width: 177px;
+    background-image: url('/img/logo-palmu.svg');
+    background-size:177px 38px;
+    background-position: 0px -4px;
+}
+
 .logo--frantic {
     width: 157px;
     height: 31px;
