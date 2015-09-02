@@ -96,7 +96,9 @@ main .coming:active {
     line-height: 1.6;
 }
 
-
+.list--disc {
+    list-style-type: disc;
+}
 .speakers {
     list-style: none;
     padding-left: 0;
