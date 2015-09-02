@@ -192,6 +192,12 @@ main .coming:active {
     background-position: 0 0;
 }
 
+@media only screen and (max-width: 37.5em) {
+    .logo--palmu {
+        background-position: -21px -4px;
+    }
+}
+
 @media only screen and (min-width: 37.5em) {
     
     .sponsor {
